@@ -1,16 +1,12 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from 'tsup';
 
 export default defineConfig({
-    entry: ["src/index.ts"],
+    entry: ['src/index.ts'],
     bundle: true,
     clean: true,
     dts: true,
-    format: ["esm"], // The desired output format(s)
-    sourcemap: process.env.UPLOAD_SOURCEMAPS === "true", // Whether to generate sourcemaps
+    format: ['esm', 'cjs'],
+    sourcemap: true,
     splitting: true,
-    outDir: "dist",
-    skipNodeModulesBundle: true,
-    minify: process.env.NODE_ENV !== "development", // Whether to minify the output
-    // splitting: true, // Whether to split the bundle into chunks
-    // target: "node18", // Specify your target environment
+    target: 'es2021',
 });

@@ -2,7 +2,7 @@
 local
 
 # build output
-dist
+# dist
 
 # Logs
 logs
