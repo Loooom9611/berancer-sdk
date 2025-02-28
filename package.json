@@ -49,13 +49,6 @@
     "vite-tsconfig-paths": "^4.2.3",
     "vitest": "3.0.5"
   },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "default": "./dist/index.mjs"
-    }
-  },
   "packageManager": "pnpm@9.1.4",
   "engines": {
     "node": ">=18.x"
